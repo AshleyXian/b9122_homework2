@@ -1,6 +1,7 @@
 import re
 
 
+# This function will return a boolean: whether this soup page contains target_word
 def find_word(soup, target_word):
     pattern = f'.*?({target_word}).*?'
     for p in soup.find_all('p'):
